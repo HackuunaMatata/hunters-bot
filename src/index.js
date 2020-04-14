@@ -56,4 +56,10 @@ bot.hears(/(.*)/i, ctx => {
   return ctx.reply('Мне такой моб не знаком :( Выбери моба из меню ниже');
 });
 
-bot.launch();
+bot.launch({
+  webhook: {
+    domain: 'hackuna-bot.herokuapp.com',
+    hookPath: '/RANDOM_ID',
+    port: process.env.PORT ||  '0.0.0.0'
+  }
+});
