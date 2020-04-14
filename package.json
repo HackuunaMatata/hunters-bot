@@ -1,0 +1,18 @@
+{
+  "name": "hunters-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "cross-env TELEGRAM_BOT_TOKEN=1235124540:AAE55A5n8O8Q72BjGrwO9nqe1DH4cCKcRaE node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "telegraf": "^3.36.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2"
+  }
+}
