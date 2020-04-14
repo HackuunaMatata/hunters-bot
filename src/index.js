@@ -26,18 +26,18 @@ const mobs = {
   mechaTrojan: 'Конь',
 };
 
+const keyBoard = [
+  [mobs.bonAppeti, mobs.terrorthorn, mobs.grimReaper],
+  [mobs.hardrox, mobs.gargantua, mobs.megaMaggot],
+  [mobs.gryphon, mobs.tidalTitan, mobs.blackwing],
+  [mobs.queenBee, mobs.frostwing, mobs.noceros],
+  [mobs.jadeWyrm, mobs.saberfang, mobs.voodooShaman],
+  [mobs.snowBeast, mobs.hellDrider, mobs.mechaTrojan],
+];
+
 bot.start(({ reply }) => {
   return reply('Привет! Выбери моба, чтобы узнать какими героями его бить',
-    Markup.keyboard([
-      [mobs.bonAppeti, mobs.terrorthorn, mobs.grimReaper],
-      [mobs.hardrox, mobs.gargantua, mobs.megaMaggot],
-      [mobs.gryphon, mobs.tidalTitan, mobs.blackwing],
-      [mobs.queenBee, mobs.frostwing, mobs.noceros],
-      [mobs.jadeWyrm, mobs.saberfang, mobs.voodooShaman],
-      [mobs.snowBeast, mobs.hellDrider, mobs.mechaTrojan],
-    ])
-      .resize()
-      .extra()
+    Markup.keyboard(keyBoard).resize().extra()
   )
 });
 
