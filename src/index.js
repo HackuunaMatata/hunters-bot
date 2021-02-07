@@ -24,6 +24,8 @@ const mobs = {
   snowBeast: 'Вьюжник',
   hellDrider: 'Драйдер',
   mechaTrojan: 'Конь',
+  cottageroar: 'Теремок',
+  hoodclaw: 'Жуткая лапа',
 };
 
 const keyBoard = [
@@ -33,6 +35,7 @@ const keyBoard = [
   [mobs.queenBee, mobs.frostwing, mobs.noceros],
   [mobs.jadeWyrm, mobs.saberfang, mobs.voodooShaman],
   [mobs.snowBeast, mobs.hellDrider, mobs.mechaTrojan],
+  [mobs.cottageroar, mobs.hoodclaw]
 ];
 
 bot.start(({ reply }) => {
